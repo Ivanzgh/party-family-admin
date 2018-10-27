@@ -17,8 +17,8 @@ app.use(session({
     secret: 'zgh ',
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: false },
-    store:new mongoStore({mongooseConnection : mongodConnection})
+    cookie: { secure: false,maxAge : 1000*60*60*2 }, //设置session有效期为2小时
+    store:new mongoStore({mongooseConnection : mongodConnection})   //session持久化，将其存在数据库
 }));
 
 

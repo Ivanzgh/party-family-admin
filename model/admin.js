@@ -9,6 +9,7 @@ const admin = new mongoose.Schema({
         type: String,
         required: true
     },
+    nickname: String,
     desc: String,
     sex: Number,
     avatar : String
