@@ -11,7 +11,7 @@ const admin = new mongoose.Schema({
     },
     nickname: String,
     desc: String,
-    sex: Number,
+    sex: String,
     avatar : String
 }, {versionKey: false, timestamps: {createdAt: 'createTime', updatedAt: 'updateTime'}});
 
